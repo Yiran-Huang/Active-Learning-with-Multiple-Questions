@@ -5,7 +5,7 @@
 - File format: csv.
 - $X$: 64-dimensional feature vector (8×8), uint8, pixel counts for each block, value range ${0,\dots,16}$.
 - $Y$: class label, categorical (10 classes).
-- Variable names: `V1`–`V64` (features), `Yall` (class label).
+- Variable file: `data.csv`. Inside the file, the features have column name `V1`–`V64`, while the class label has column name `Yall`.
 
 Each $32\times32$ bitmap image is partitioned into non-overlapping $4\times4$ blocks, counting active pixels per block to form an $8\times8$ matrix (values 0--16).
 
